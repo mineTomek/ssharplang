@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>S#</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/1cfc1e2919.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="side-menu">
+    <div class="menu-item" style="background-color: red;">
+      <i class="icon menu fa-brands fa-github"></i>
+      Open-source on 
+      <a href="https://github.com/mineTomek/ssharplang">
+        GitHub</a>!
+    </div>
+    <div class="menu-item">
+      <i class="icon menu fa-brands fa-youtube"></i>
+      Visit my  
+      <a href="https://YouTube.com/channel/UC-ytTDqZqvtTyLThRujjOyw">
+        Youtube Channel</a>!
+    </div>
+    <div class="menu-item">
+      <i class="icon menu fa-solid fa-file-lines"></i>
+      Check out
+      <a href="https://mineTomek.github.io/ssharplang">
+        compiler API</a>!
+    </div>
+  </div>
+  <div class="box" id="menu-bar">
+    <div id="menu-icon" onClick="toogleSideMenu()">
+      <div class="menu-icon"></div>
+      <div class="menu-icon"></div>
+      <div class="menu-icon"></div>
+    </div>
+    <h1>S#</h1>
+  </div>
+  
+  <div id="form" class="box">
+    <p>Enter equation: </p>
+    <textarea id="equation">2 ++ 2</textarea>
+    <div class="box"> 
+      <button class="control enabled" onClick="run()">Run</button>
+      <button class="control not-enabled" onClick="stop()">Stop</button>
+    </div>
+    <p>Output:</p>
+    <div id="console">
+      <span id="output">Syntax Error: Unexpected character '+'
+      File: [console], line: 1, column: 4
+      </span>
+      <span id="cursor">_</span>
+    </div>
+  </div>
+  
+  <button id="mode" class="box">Toogle dark mode</button>
+
+  <script src="img/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

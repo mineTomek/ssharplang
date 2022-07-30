@@ -1,0 +1,126 @@
+body {
+  background: black;
+  color: black;
+  font-family: Arial;
+}
+
+a {
+  color: inherit;
+}
+
+a:visited {
+  text-decoration-color: red;
+  color: red;
+}
+
+#menu-bar {
+  background-color: black;
+  border-radius: 0px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  height: 40px;
+  width: 100%;
+  z-index: 75;
+}
+
+#menu-icon {
+  height: 50px;
+  aspect-ratio: 1;
+  float: left;
+}
+
+.menu-icon {
+  width: 40px;
+  height: 9px;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+.icon {
+}
+
+.icon.menu {
+  padding: 2px;
+  width: 25px;
+}
+
+h1 {
+  padding-top: 2px;
+  margin: 0px;
+  text-align: center;
+  background-color: interhit;
+}
+
+#side-menu {
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  left: -100%;
+  top: 0px;
+  right: 100%;
+  font-size: 18px;
+  padding-top: 50px;
+}
+
+.menu-item {
+  margin: 5px;
+  margin-bottom: 10px;
+  margin-left: -10px;
+  border-radius: 10px;
+  padding: 7px;
+  padding-left: 20px;
+  color: inherit;
+}
+
+button.control {
+  border-radius: 10px;
+  background-color: black;
+  width: 80px;
+  height: 40px;
+  font-size: 30px;
+  text-align: center;
+  padding: 0px;
+  color: white;
+  border: 0px;
+}
+
+.box {
+  border-radius: 10px;
+  padding: 4px;
+  background-color: black;
+}
+
+#form {
+  margin-top: 57px;
+  padding: 20px;
+}
+
+#console {
+  background-color: black;
+  font-family: "Courier New";
+  font-weight: 520;
+  color: black;
+  min-height: 100px;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+#cursor {
+  margin-left: 0px;
+}
+
+#mode {
+  position: fixed;
+  bottom: 5px;
+  border-radius: 10px;
+  padding: 5px;
+  z-index: 50;
+  height: 40px;
+  weight: 130px;
+  font-size: 20px;
+  color: inherit;
+  background-color: black;
+  border: 0px;
+}
