@@ -2,7 +2,7 @@
 
 ## Roadmap:
 * [Quick Start](/quick-start.md)
-* [Full Documentation](/docs.md)
-* [Compiler API](api-docs.md)
+* [Full Documentation](/documentation.md)
+* [Compiler API](/api-docs.md)
 
-###### <sup>1</sup> Site is not finished and this is placeholder content. When the first S# version will be out this page will be updated to contain actual information.
+##### <sup>1</sup> Site is not finished and this is placeholder content. When the first S# version will be out this page will be updated to contain actual information.
