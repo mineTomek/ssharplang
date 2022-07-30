@@ -5,6 +5,6 @@
 * [Full Documentation](/documentation.md)
 * [Compiler API](/api-docs.md)
 
-[Index.html](/compiler/index.html)
+- [Index.html](/compiler/index.html)
 
 ##### <sup>1</sup> Site is not finished and this is placeholder content. When the first S# version will be out this page will be updated to contain actual information.
