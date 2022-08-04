@@ -1,0 +1,12 @@
+/Users/rlukomski/Documents/Tomek Coding/Github Repos/ssharplang/Language/S-Sharp/bin/Debug/netcoreapp3.1/S-Sharp.deps.json
+/Users/rlukomski/Documents/Tomek Coding/Github Repos/ssharplang/Language/S-Sharp/bin/Debug/netcoreapp3.1/S-Sharp.runtimeconfig.json
+/Users/rlukomski/Documents/Tomek Coding/Github Repos/ssharplang/Language/S-Sharp/bin/Debug/netcoreapp3.1/S-Sharp.runtimeconfig.dev.json
+/Users/rlukomski/Documents/Tomek Coding/Github Repos/ssharplang/Language/S-Sharp/bin/Debug/netcoreapp3.1/S-Sharp.dll
+/Users/rlukomski/Documents/Tomek Coding/Github Repos/ssharplang/Language/S-Sharp/bin/Debug/netcoreapp3.1/S-Sharp.pdb
+/Users/rlukomski/Documents/Tomek Coding/Github Repos/ssharplang/Language/S-Sharp/obj/Debug/netcoreapp3.1/S-Sharp.csprojAssemblyReference.cache
+/Users/rlukomski/Documents/Tomek Coding/Github Repos/ssharplang/Language/S-Sharp/obj/Debug/netcoreapp3.1/S-Sharp.AssemblyInfoInputs.cache
+/Users/rlukomski/Documents/Tomek Coding/Github Repos/ssharplang/Language/S-Sharp/obj/Debug/netcoreapp3.1/S-Sharp.AssemblyInfo.cs
+/Users/rlukomski/Documents/Tomek Coding/Github Repos/ssharplang/Language/S-Sharp/obj/Debug/netcoreapp3.1/S-Sharp.csproj.CoreCompileInputs.cache
+/Users/rlukomski/Documents/Tomek Coding/Github Repos/ssharplang/Language/S-Sharp/obj/Debug/netcoreapp3.1/S-Sharp.dll
+/Users/rlukomski/Documents/Tomek Coding/Github Repos/ssharplang/Language/S-Sharp/obj/Debug/netcoreapp3.1/S-Sharp.pdb
+/Users/rlukomski/Documents/Tomek Coding/Github Repos/ssharplang/Language/S-Sharp/obj/Debug/netcoreapp3.1/S-Sharp.genruntimeconfig.cache
