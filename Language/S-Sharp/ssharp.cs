@@ -187,7 +187,7 @@ namespace S_Sharp
                 currentChar = pos.idx < text.Length ? text[pos.idx] : '\0';
             }
 
-            public TokenMakingResult make_tokens()
+            public TokenMakingResult makeTokens()
             {
                 List<Token> tokens = new List<Token>();
 
@@ -208,15 +208,15 @@ namespace S_Sharp
                     }
                     else if (char.IsDigit(currentChar))
                     {
-                        tokens.Add(make_number());
+                        tokens.Add(makeNumber());
                     }
                     else if (char.IsLetter(currentChar))
                     {
-                        tokens.Add(make_identifier());
+                        tokens.Add(makeIdentifier());
                     }
                     else if (currentChar == '\"')
                     {
-                        tokens.Add(make_string());
+                        tokens.Add(makeString());
                     }
                     else if (currentChar == '+')
                     {
@@ -314,7 +314,7 @@ namespace S_Sharp
                 }
             }
 
-            public Token make_number()
+            public Token makeNumber()
             {
                 var num_str = "";
                 var dot_count = 0;
@@ -339,6 +339,57 @@ namespace S_Sharp
                 {
                     return new Token(TT_FLOAT, float.Parse(num_str), pos_start, pos);
                 }
+            }
+
+            public Token makeString()
+            {
+                string str = "";
+                Position posStart = pos.Copy();
+                bool escapeChar = false;
+
+                Advance();
+
+                Dictionary<char, char> escapeChars = new Dictionary<char, char> {
+                    {
+                        'n',
+                        '\n'
+                    },
+                    {
+                        't',
+                        '\t'
+                    }};
+                while (currentChar != '\0' && (currentChar != '\"' || escapeChar))
+                {
+                    if (escapeChar)
+                    {
+                        str += escapeChars[currentChar];
+                    }
+                    else if (currentChar == '\\')
+                    {
+                        escapeChar = true;
+                    }
+                    else
+                    {
+                        str += currentChar;
+                    }
+                    Advance();
+                    escapeChar = false;
+                }
+                Advance();
+                return new Token(TT_STRING, str, posStart, pos);
+            }
+
+            public Token makeIdentifier()
+            {
+                string idStr = "";
+                Position posStart = pos.Copy();
+                while (currentChar != '\0' && (char.IsLetter(currentChar) || currentChar == '_')
+                {
+                    idStr += currentChar;
+                    Advance();
+                }
+                string tokenType = Array.Exists(KEYWORDS, element => element == idStr) ? TT_KEYWORD : TT_IDENTIFIER;
+                return new Token(tokenType, idStr, posStart, pos);
             }
         }
 
