@@ -10,9 +10,22 @@ namespace S_Sharp
                 Console.Write("s# > ");
                 string code = Console.ReadLine();
 
-                if (code == "") { continue; }
+                if (code.Trim() == "") { continue; }
 
                 Result res = ssharp.Run("<stdin>", code);
+
+                /*
+                if (res.error != null) {
+                    Console.WriteLine(res.error);
+                }
+                else if (res.text != null) {
+                    if (result.elements.Length == 1) {
+                        Console.WriteLine(res.text.elements[0]);
+                    } else {
+                        Console.WriteLine(res.text);
+                    }
+                }
+                */
 
                 Console.WriteLine(res.ToString());
             }
