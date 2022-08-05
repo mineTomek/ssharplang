@@ -4,3 +4,4 @@ Language/S-Sharp/obj/Debug/netcoreapp3.1/S-Sharp.csprojAssemblyReference.cache
 Language/S-Sharp/original.py
 *.cache
 *.DS_Store
+Language/.vs/Language/xs/UserPrefs.xml
