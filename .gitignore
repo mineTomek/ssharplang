@@ -5,3 +5,4 @@ Language/S-Sharp/original.py
 Language/S-Sharp/lexer.py
 Language/S-Sharp/lexer.py
 Language/.vs/Language/xs/UserPrefs.xml
+*.cache
