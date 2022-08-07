@@ -186,7 +186,7 @@ namespace S_Sharp
         };
 
 
-        class Token
+        public class Token
         {
             public string type;
             public object value;
@@ -230,7 +230,7 @@ namespace S_Sharp
 
         /// Lexer
 
-        class Lexer
+        public class Lexer
         {
             public string fn; // Filename
             public string text;
@@ -256,7 +256,7 @@ namespace S_Sharp
             {
                 List<Token> tokens = new List<Token>();
 
-                while (currentChar != null)
+                while (currentChar != '\0')
                 {
                     if (" \t".Contains(currentChar))
                     {
@@ -959,7 +959,7 @@ namespace S_Sharp
                     }
                     statements.Add(statement);
                 }
-                return res.Success(new ListNode(statements.ToArray(), posStart, currentToken.posEnd.Copy()));
+                return res.Success(new ListNode(statements, posStart, currentToken.posEnd.Copy()));
             }
 
             public ParseResult Statement()
@@ -1292,7 +1292,7 @@ namespace S_Sharp
             public ParseResult IfExprC()
             {
                 ParseResult res = new ParseResult();
-                Node else_case = null;
+                Node elseCase = null;
                 if (currentToken.Matches(TT_KEYWORD, "ELSE"))
                 {
                     res.RegisterAdvancement();
@@ -1306,7 +1306,7 @@ namespace S_Sharp
                         {
                             return res;
                         }
-                        else_case = (statements, true);
+                        elseCase = (statements, true);
                         if (currentToken.Matches(TT_KEYWORD, "END"))
                         {
                             res.RegisterAdvancement();
@@ -1324,10 +1324,10 @@ namespace S_Sharp
                         {
                             return res;
                         }
-                        else_case = (expr, false);
+                        elseCase = (expr, false);
                     }
                 }
-                return res.Success(else_case);
+                return res.Success(elseCase);
             }
 
             public ParseResult IfExprBOrC()
