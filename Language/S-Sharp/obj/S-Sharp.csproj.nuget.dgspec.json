@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/rlukomski/Documents/Tomek Coding/Github Repos/ssharplang/Language/S-Sharp/S-Sharp.csproj": {}
+    "/Users/mineTomek/Desktop/Projects/ssharplang/Language/S-Sharp/S-Sharp.csproj": {}
   },
   "projects": {
-    "/Users/rlukomski/Documents/Tomek Coding/Github Repos/ssharplang/Language/S-Sharp/S-Sharp.csproj": {
+    "/Users/mineTomek/Desktop/Projects/ssharplang/Language/S-Sharp/S-Sharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rlukomski/Documents/Tomek Coding/Github Repos/ssharplang/Language/S-Sharp/S-Sharp.csproj",
+        "projectUniqueName": "/Users/mineTomek/Desktop/Projects/ssharplang/Language/S-Sharp/S-Sharp.csproj",
         "projectName": "S-Sharp",
-        "projectPath": "/Users/rlukomski/Documents/Tomek Coding/Github Repos/ssharplang/Language/S-Sharp/S-Sharp.csproj",
-        "packagesPath": "/Users/rlukomski/.nuget/packages/",
-        "outputPath": "/Users/rlukomski/Documents/Tomek Coding/Github Repos/ssharplang/Language/S-Sharp/obj/",
+        "projectPath": "/Users/mineTomek/Desktop/Projects/ssharplang/Language/S-Sharp/S-Sharp.csproj",
+        "packagesPath": "/Users/mineTomek/.nuget/packages/",
+        "outputPath": "/Users/mineTomek/Desktop/Projects/ssharplang/Language/S-Sharp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/rlukomski/.config/NuGet/NuGet.Config"
+          "/Users/mineTomek/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -24,6 +24,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -35,6 +36,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -45,12 +47,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-x64",
+              "version": "[3.1.27, 3.1.27]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
         }
       }
     }

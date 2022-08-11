@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "xxyCjASfGTDUwKtHtgPwQSx362Xpho+gIQTAbi+e8rYWQZZu03o/d52etSfCwRXLJruNth1fVT/OS39krGe/wA==",
+  "dgSpecHash": "eT6Q4uiaLVuudBJwUQ+MW+iugdTpB3WagB/r5+Jfqhg3Zan87XQ6s/LjGV04iJ+pGsFj4moE1vYtP2iQDWt3MA==",
   "success": true,
-  "projectFilePath": "/Users/rlukomski/Documents/Tomek Coding/Github Repos/ssharplang/Language/S-Sharp/S-Sharp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/mineTomek/Desktop/Projects/ssharplang/Language/S-Sharp/S-Sharp.csproj",
+  "expectedPackageFiles": [
+    "/Users/mineTomek/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/Users/mineTomek/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.27/microsoft.netcore.app.host.osx-x64.3.1.27.nupkg.sha512",
+    "/Users/mineTomek/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
   "logs": []
 }
